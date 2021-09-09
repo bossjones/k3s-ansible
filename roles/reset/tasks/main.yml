@@ -1,3 +1,4 @@
+
 ---
 - name: Disable services
   systemd:
@@ -34,10 +35,9 @@
     - "{{ systemd_dir }}/k3s.service"
     - "{{ systemd_dir }}/k3s-node.service"
     - /etc/rancher/k3s
+    - /etc/rancher
     - /var/lib/kubelet
     - /var/lib/rancher/k3s
-    - /etc/rancher/
-
 
 - name: daemon_reload
   systemd:

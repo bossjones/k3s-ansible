@@ -1,0 +1,9 @@
+---
+- hosts: k3s_cluster
+  gather_facts: no
+  become: yes
+  become_method: sudo
+  # serial: True
+  pre_tasks:
+  - name: ping all machines
+    ping:

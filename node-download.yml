@@ -1,0 +1,11 @@
+---
+
+- hosts: node
+  gather_facts: yes
+  become: yes
+  roles:
+    - role: prereq
+    - role: download
+    - role: raspberrypi
+  tags:
+    - download

@@ -12,3 +12,6 @@ download:
 
 ping:
 	ansible-playbook -vvvv -i inventory/my-cluster/hosts.ini ping.yml
+
+node:
+	ansible-playbook -vvvv -i inventory/my-cluster/hosts.ini node.yml

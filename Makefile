@@ -1,7 +1,6 @@
 site:
 	ansible-playbook -vvvv -i inventory/my-cluster/hosts.ini site.yml
 
-
 provision:
 	ansible-playbook -vvvv -i inventory/my-cluster/hosts.ini provision.yml
 
@@ -10,3 +9,6 @@ reset:
 
 download:
 	ansible-playbook -vvvv -i inventory/my-cluster/hosts.ini download.yml
+
+ping:
+	ansible-playbook -vvvv -i inventory/my-cluster/hosts.ini ping.yml

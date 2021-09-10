@@ -39,5 +39,6 @@ sudo systemctl restart multipathd.service
 
 sudo apt-get remove --purge -y kubeadm kubelet kubectl kubernetes-cni || true
 sudo apt-get install mlocate -y
+sudo apt autoremove -y
 sudo updatedb
 sudo mlocate kubelet

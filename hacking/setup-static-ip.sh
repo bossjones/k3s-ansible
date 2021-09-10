@@ -35,3 +35,6 @@ sudo cat /etc/multipath.conf
 echo "network: {config: disabled}" | tee /etc/cloud/cloud.cfg.d/subiquity-disable-cloudinit-networking.cfg
 sudo netplan apply
 sudo systemctl restart multipathd.service
+
+
+sudo apt-get remove --prune -y kubeadm kubelet kubectl kubernetes-cni || true

@@ -35,3 +35,7 @@ check-tls:
 	bash ./hacking/check_tls.sh
 	echo ""
 	date
+
+clean-master: reset-master
+	sudo systemctl stop k3s
+	./hacking/k3s-killall.sh

@@ -31,11 +31,13 @@
     name: "{{ item }}"
     state: absent
   with_items:
-    - /usr/local/bin/k3s
-    - "{{ systemd_dir }}/k3s.service"
     - "{{ systemd_dir }}/k3s-node.service"
-    - /etc/rancher/k3s
+    - "{{ systemd_dir }}/k3s.service"
     - /etc/rancher
+    - /etc/rancher/k3s
+    - /run/flannel
+    - /run/k3s
+    - /usr/local/bin/k3s
     - /var/lib/kubelet
     - /var/lib/rancher/k3s
 

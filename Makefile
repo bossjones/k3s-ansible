@@ -7,6 +7,9 @@ provision:
 reset:
 	ansible-playbook -vvv -i inventory/my-cluster/hosts.ini reset.yml
 
+reset-master:
+	ansible-playbook -vvv -i inventory/my-cluster/hosts.ini reset-master.yml
+
 download:
 	ansible-playbook -vvv -i inventory/my-cluster/hosts.ini download.yml
 

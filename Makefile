@@ -37,5 +37,5 @@ check-tls:
 	date
 
 clean-master: reset-master
-	sudo systemctl stop k3s
+	sudo systemctl stop k3s || true
 	./hacking/k3s-killall.sh

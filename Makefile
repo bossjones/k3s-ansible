@@ -27,3 +27,8 @@ debug:
 
 gpr:
 	git pull --rebase
+
+check-tls:
+	bash ./hacking/check_tls.sh
+	echo ""
+	date

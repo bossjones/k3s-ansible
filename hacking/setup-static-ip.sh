@@ -2,11 +2,10 @@
 
 # note this is for lab1
 sudo tee /etc/netplan/00-installer-config.yaml >/dev/null << EOF
-/etc/netplan/00-installer-config.yaml
 network:
   ethernets:
     ens33:
-      addresses: [192.168.1.69/24]
+      addresses: [192.168.1.67/24]
       gateway4: 192.168.1.1
       nameservers:
         addresses: [8.8.8.8,8.8.4.4]

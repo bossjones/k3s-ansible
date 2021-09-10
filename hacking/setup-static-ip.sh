@@ -37,4 +37,4 @@ sudo netplan apply
 sudo systemctl restart multipathd.service
 
 
-sudo apt-get remove --prune -y kubeadm kubelet kubectl kubernetes-cni || true
+sudo apt-get remove --purge -y kubeadm kubelet kubectl kubernetes-cni || true

@@ -1,22 +1,22 @@
 site:
-	ansible-playbook -vvvv -i inventory/my-cluster/hosts.ini site.yml
+	ansible-playbook -vvv -i inventory/my-cluster/hosts.ini site.yml
 
 provision:
-	ansible-playbook -vvvv -i inventory/my-cluster/hosts.ini provision.yml
+	ansible-playbook -vvv -i inventory/my-cluster/hosts.ini provision.yml
 
 reset:
-	ansible-playbook -vvvv -i inventory/my-cluster/hosts.ini reset.yml
+	ansible-playbook -vvv -i inventory/my-cluster/hosts.ini reset.yml
 
 download:
-	ansible-playbook -vvvv -i inventory/my-cluster/hosts.ini download.yml
+	ansible-playbook -vvv -i inventory/my-cluster/hosts.ini download.yml
 
 ping:
-	ansible-playbook -vvvv -i inventory/my-cluster/hosts.ini ping.yml
+	ansible-playbook -vvv -i inventory/my-cluster/hosts.ini ping.yml
 
 node:
-	ansible-playbook -vvvv -i inventory/my-cluster/hosts.ini node.yml
+	ansible-playbook -vvv -i inventory/my-cluster/hosts.ini node.yml
 node-download:
-	ansible-playbook -vvvv -i inventory/my-cluster/hosts.ini node-download.yml
+	ansible-playbook -vvv -i inventory/my-cluster/hosts.ini node-download.yml
 
 debug:
 # Get k3s server logs
@@ -24,3 +24,6 @@ debug:
 
 # Save logs into a file
 	sudo journalctl -u k3s > logs.txt
+
+gpr:
+	git pull --rebase

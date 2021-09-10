@@ -39,3 +39,4 @@ check-tls:
 clean-master: reset-master
 	sudo systemctl stop k3s || true
 	./hacking/k3s-killall.sh
+	rm -rfv  /var/lib/rancher/k3s/server/node-token || true

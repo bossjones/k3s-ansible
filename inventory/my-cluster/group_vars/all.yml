@@ -6,5 +6,6 @@ master_ip: "{{ hostvars[groups['master'][0]]['ansible_host'] | default(groups['m
 # extra_server_args: "--cluster-init --tls-san '{{ hostvars[groups['master'][0]]['ansible_host'] | default(groups['master'][0]) }}' --cluster-reset"
 # extra_server_args: "--cluster-init --cluster-reset"
 # extra_server_args: "-v 5 --debug --cluster-init --cluster-reset"
-extra_server_args: "-v 5 --debug"
+# extra_server_args: "-v 5 --debug"
+extra_server_args: ""
 extra_agent_args: ""

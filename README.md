@@ -58,3 +58,20 @@ To get access to your **Kubernetes** cluster just
 ```bash
 scp debian@master_ip:~/.kube/config ~/.kube/config
 ```
+
+
+# converge
+
+```
+# set static ip
+./hacking/setup-static-ip.sh
+
+# clean the slate
+make clean-master
+make reset
+
+# download across all
+make download
+
+make provision
+```
